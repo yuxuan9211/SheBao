@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF2FF" 
+    android:orientation="vertical" >
+    
+        <!-- 参会密码管理标题 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal">
+        <ImageView
+            android:contentDescription="@string/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_back_selector"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/back_btn"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            />
+          
+      </LinearLayout>
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+	 <LinearLayout 
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content" 
+       		android:orientation="vertical">
+            
+	      <TextView
+		        android:id="@+id/detail_title"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#000000"
+		        android:textSize="25sp"
+		        android:layout_marginTop="10dp"
+		        android:text=""
+		        android:gravity="center"
+		        />
+	       <TextView
+		        android:id="@+id/detail_time"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#5B5F5B"
+		        android:textSize="16sp"
+		        android:layout_marginTop="5dp"
+		        android:text=""
+		        android:gravity="center"
+		        />
+		    <TextView
+		        android:id="@+id/detail_text"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#000000"
+		        android:paddingLeft="10dp"
+		        android:paddingTop="10dp"
+		        android:paddingRight = "5dp"
+		        android:paddingBottom="10dp"
+		        android:textSize="20sp"
+		        android:text="" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

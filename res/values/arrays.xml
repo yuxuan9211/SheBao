@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="types">
+        <item>个人参保情况</item>
+        <item>医保消费明细</item>
+        <item>社保缴费明细</item>
+    </string-array>
+</resources>

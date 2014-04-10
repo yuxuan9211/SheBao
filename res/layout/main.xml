@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+       
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+           />
+         <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentBottom="true" 
+            android:visibility="gone"
+           />
+         <FrameLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" 
+                >
+          <RadioGroup 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:gravity="center_vertical" 
+              android:layout_gravity="bottom" 
+              android:orientation="horizontal" 
+              android:id="@+id/mainRG"   
+              
+              android:background="@drawable/bottom_bar">
+            <RadioButton android:id="@+id/radio_guide" android:tag="radio_guide_btn"    android:background="@drawable/guide_selector"  android:layout_gravity="center"  style="@style/main_tab_bottom"/>
+            <RadioButton android:id="@+id/radio_notice" android:tag="radio_notice_btn"   android:background="@drawable/notice_selector"  android:layout_gravity="center" style="@style/main_tab_bottom"/>
+            <RadioButton android:id="@+id/radio_transact" android:tag="radio_transact_btn"    android:background="@drawable/query_selector" android:layout_gravity="center" style="@style/main_tab_bottom" />
+            <RadioButton android:id="@+id/radio_setting" android:tag="radio_setting_btn"    android:background="@drawable/setting_selector" android:layout_gravity="center" style="@style/main_tab_bottom" />
+        </RadioGroup>
+        </FrameLayout>
+    </RelativeLayout>
+</TabHost>

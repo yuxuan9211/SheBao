@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gnet.shebao"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+     <!-- 获取网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".activity.SheBaoActivity"
+            android:label="@string/app_name" 
+  			android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GuideActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.NoticeActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.QueryActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.SettingActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.LoginActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.ListNoHeaderActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.ListWithHeaderActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:name=".activity.MedicalActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+        
+         <activity
+            android:name=".activity.DetailActivity"
+  			android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
